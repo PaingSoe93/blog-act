@@ -84,7 +84,7 @@
         window.location.href = 'index.html'
 
       $('#page-title').text(data[query.page_key].title)
-      $('#page-image').attr('src', `img/${data[query.page_key].image_name}.jpg`);
+      $('#page-image').attr('src', `img/${data[query.page_key].image_name}`);
       $('#page-body').html(data[query.page_key].body)
       $('#page-tag').text(data[query.page_key].tag)
     });
