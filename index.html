@@ -18,10 +18,36 @@
 </head>
 
 <body id="top">
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"><a href="contact.html" id="contact-button"
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <a href="contact.html" id="contact-button"
       class="mdl-button mdl-button--fab mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--4dp">
       <i class="material-icons"> mail </i></a>
-    <header class="mdl-layout__header mdl-layout__header--waterfall site-header">
+
+      <!-- Always shows a header, even in smaller screens. -->
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Digithouse Blog</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link"
+            href="index.html">Blogs</a><a class="mdl-navigation__link" href="about.html">About</a><a
+            class="mdl-navigation__link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Digithouse Blog</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link"
+            href="index.html">Blogs</a><a class="mdl-navigation__link" href="about.html">About</a><a
+            class="mdl-navigation__link" href="contact.html">Contact</a>
+    </nav>
+  </div>
+  
+    <!-- <header class="mdl-layout__header mdl-layout__header--waterfall site-header is-casting-shadow is-compact">
       <div class="mdl-layout__header-row site-logo-row"><span class="mdl-layout__title">
           <div class="site-logo"></div><span class="site-description">Material Design Portfolio</span>
         </span></div>
@@ -31,13 +57,13 @@
             class="mdl-navigation__link" href="contact.html">Contact</a>
         </nav>
       </div>
-    </header>
-    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+    </header> -->
+    <!-- <div class="mdl-layout__drawer mdl-layout--small-screen-only">
       <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font"><a class="mdl-navigation__link"
           href="index.html">Portfolio</a><a class="mdl-navigation__link" href="about.html">About</a><a
           class="mdl-navigation__link" href="contact.html">Contact</a>
       </nav>
-    </div>
+    </div> -->
     <main class="mdl-layout__content">
       <div class="site-content">
         <div class="container">
@@ -48,10 +74,9 @@
       </div>
       <footer class="mdl-mini-footer">
         <div class="footer-container">
-          <div class="mdl-logo">&copy; Unitiled. Design: <a href="https://templateflip.com/"
-              target="_blank">TemplateFlip</a></div>
+          <div class="mdl-logo">&copy; Design: <a href="digithouse.co" target="_blank">Digithouse</a></div>
           <ul class="mdl-mini-footer__link-list">
-            <li><a href="#">Privacy & Terms</a></li>
+            <li><a href="privacy.html">Privacy & Terms</a></li>
           </ul>
         </div>
       </footer>
