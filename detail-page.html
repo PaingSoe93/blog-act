@@ -88,9 +88,6 @@
                     class="mdl-cell mdl-cell--10-col mdl-card__supporting-text no-padding "
                     id="page-body"
                   ></div>
-                  <p>
-                    <h5 class="mdl-cell mdl-cell--12-col mdl-typography--headline" id="page-tag" style="text-transform: capitalize;">Introduction</h3>
-                  </p>
                 </div>
               </div>
             </div>
@@ -122,7 +119,6 @@
         $("#page-image").attr("src", `img/${data[query.page_key].image_name}`);
         $("#page-description").html(data[query.page_key].description);
         $("#page-body").html(data[query.page_key].body);
-        $("#page-tag").text(data[query.page_key].tag);
       });
     });
   </script>
